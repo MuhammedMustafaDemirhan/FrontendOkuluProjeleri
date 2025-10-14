@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f7f2f7;
+  color: #222;
+  line-height: 1.6;
+}
+
+header {
+  text-align: center;
+  background-color: darkred;
+  color: white;
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+header a:hover {
+  color: #ffcccc;
+  transition: 0.3s;
+}
+
+header ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  gap: 20px;
+}
+
+header a {
+  color: white;
+  text-decoration: none;
+}
+
+section {
+  padding: 60px 20px;
+}
+
+#hakkimda {
+  max-width: 850px;
+  margin: auto;
+  line-height: 1.6;
+  text-align: center;
+}
+
+#hakkimda h2 {
+  margin-bottom: 20px;
+  border-bottom: 2px solid darkred;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+#projeler {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+#projects {
+  text-align: center;
+  padding: 10px;
+}
+
+.project {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 30px;
+  text-align: center;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.project:hover {
+  transform: scale(1.03);
+}
+
+#iletisim {
+  text-align: center;
+}
+
+.contactcard {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  max-width: 500px;
+  margin: auto;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.contactcard li {
+  list-style: none;
+  padding: 7px;
+}
+
+#footer {
+  padding: 15px 0;
+  background-color: black;
+  color: white;
+  text-align: center;
+  font-size: 0.9rem;
+}
