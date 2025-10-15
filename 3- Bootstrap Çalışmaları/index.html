@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <style>
+      footer a:hover {
+        color: #0d6efd;
+        transform: scale(1.2);
+        transition: all 0.3s ease;
+      }
+      .navbar-dark .nav-link:hover {
+        color: #0d6efd;
+        text-decoration: underline;
+        transition: color 0.3s ease, text-decoration 0.3s ease;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar-dark bg-dark py-3">
+      <div
+        class="container d-flex justify-content-between align-items-center sticky-top"
+      >
+        <div id="logo">
+          <a href="index.html" class="fs-4 text-white text-decoration-none"
+            >Muhammed Mustafa Demirhan</a
+          >
+        </div>
+        <ul class="nav">
+          <li class="nav-item">
+            <a href="#hakkimda" class="nav-link text-white">Hakkımda</a>
+          </li>
+          <li class="nav-item">
+            <a href="#projeler" class="nav-link text-white">Projeler</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <section>
+      <article id="slider">
+        <div
+          class="carousel slide mb-4"
+          id="carouselExample"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="https://i.pinimg.com/originals/d4/c1/7d/d4c17d48d9e0a5ac9986887163f435ec.jpg"
+                class="d-block w-100"
+                alt="Üçüncü Resim"
+                style="height: 500px; object-fit: cover; width: 100%"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://e1.pxfuel.com/desktop-wallpaper/957/492/desktop-wallpaper-dark-code-code.jpg"
+                class="d-block w-100"
+                alt="İlk Resim"
+                style="height: 500px; object-fit: cover; width: 100%"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://enderelektronik.com.tr/wp-content/uploads/2021/03/Online-Kod.jpg"
+                class="d-block w-100"
+                alt="İkinci Resim"
+                style="height: 500px; object-fit: cover; width: 100%"
+              />
+            </div>
+          </div>
+
+          <!-- Butonlar carousel içinde -->
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExample"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExample"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </article>
+      <article id="hakkimda">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-md-4 text-center mb-3 mb-md-8">
+              <img
+                src="ves.jpg"
+                class="img-fluid rounded-circle"
+                alt="Profil Fotoğrafı"
+                width="250px"
+                height="250px"
+              />
+            </div>
+            <div class="col-md-8">
+              <h2 class="mb-3">Ben Kimim?</h2>
+              <p>
+                Mersin Üniversitesi Bilgisayar Programcılığı önlisans
+                programından mezun oldum. Digitürk’te yazılım stajımı başarıyla
+                tamamladım. React.js, SQL ve Web API gibi teknolojilerde bilgi
+                sahibiyim ve staj sürecinde yazılım geliştirme süreçlerini hem
+                gözlemleyip hem de aktif olarak uygulama fırsatı buldum. Daha
+                önce eOfis’te BT stajyeri olarak çalıştım; bilgisayar
+                kurulumları, ağ cihazları yapılandırmaları ve dahili telefon
+                bağlantıları gibi teknik görevlerde deneyim kazandım. Öğrenmeye
+                açık, çözüm odaklı ve yazılım dünyasında sağlam bir kariyer
+                hedefleyen biriyim.
+              </p>
+              <h4 class="mt-4">Yeteneklerim</h4>
+
+              <div class="mb-2">
+                <span>Git</span>
+                <div class="progress">
+                  <div
+                    class="progress-bar bg-success"
+                    role="progressbar"
+                    style="width: 70%"
+                  >
+                    70%
+                  </div>
+                </div>
+              </div>
+
+              <div class="mb-2">
+                <span>C#</span>
+                <div class="progress">
+                  <div
+                    class="progress-bar bg-success"
+                    role="progressbar"
+                    style="width: 80%"
+                  >
+                    80%
+                  </div>
+                </div>
+              </div>
+
+              <div class="mb-2">
+                <span>React.js</span>
+                <div class="progress">
+                  <div
+                    class="progress-bar bg-success"
+                    role="progressbar"
+                    style="width: 70%"
+                  >
+                    70%
+                  </div>
+                </div>
+              </div>
+
+              <div class="mb-2">
+                <span>JavaScript</span>
+                <div class="progress">
+                  <div
+                    class="progress-bar bg-success"
+                    role="progressbar"
+                    style="width: 60%"
+                  >
+                    60%
+                  </div>
+                </div>
+              </div>
+
+              <div class="mb-2">
+                <span>HTML5</span>
+                <div class="progress">
+                  <div
+                    class="progress-bar bg-success"
+                    role="progressbar"
+                    style="width: 90%"
+                  >
+                    90%
+                  </div>
+                </div>
+              </div>
+
+              <div class="mb-2">
+                <span>CSS</span>
+                <div class="progress">
+                  <div
+                    class="progress-bar bg-success"
+                    role="progressbar"
+                    style="width: 65%"
+                  >
+                    65%
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article id="projeler">
+        <div class="container py-5">
+          <h2 class="text-center mb-4">Projelerim</h2>
+          <div class="row g-4">
+            <!-- 1. Kart -->
+            <div class="col-md-4">
+              <div class="card h-100">
+                <div class="card-body text-center">
+                  <h5 class="card-title">Book Store API</h5>
+                  <a
+                    href="https://github.com/MuhammedMustafaDemirhan/BookStore"
+                    target="_blank"
+                    class="btn btn-secondary"
+                    >GitHub'da Görüntüle</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- 2. Kart -->
+            <div class="col-md-4">
+              <div class="card h-100">
+                <div class="card-body text-center">
+                  <h5 class="card-title">Hospital Automation</h5>
+                  <a
+                    href="https://github.com/MuhammedMustafaDemirhan/HospitalAutomation"
+                    target="_blank"
+                    class="btn btn-secondary"
+                    >GitHub'da Görüntüle</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- 3. Kart -->
+            <div class="col-md-4">
+              <div class="card h-100">
+                <div class="card-body text-center">
+                  <h5 class="card-title">Movie App</h5>
+                  <a
+                    href="https://github.com/MuhammedMustafaDemirhan/MovieApp"
+                    target="_blank"
+                    class="btn btn-secondary"
+                    >GitHub'da Görüntüle</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- 4. Kart -->
+            <div class="col-md-4">
+              <div class="card h-100">
+                <div class="card-body text-center">
+                  <h5 class="card-title">Shopping List</h5>
+                  <a
+                    href="https://github.com/MuhammedMustafaDemirhan/ShoppingList"
+                    target="_blank"
+                    class="btn btn-secondary"
+                    >GitHub'da Görüntüle</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- 5. Kart -->
+            <div class="col-md-4">
+              <div class="card h-100">
+                <div class="card-body text-center">
+                  <h5 class="card-title">Travel Trip</h5>
+                  <a
+                    href="https://github.com/MuhammedMustafaDemirhan/TravelTripProje"
+                    target="_blank"
+                    class="btn btn-secondary"
+                    >GitHub'da Görüntüle</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- 6. Kart -->
+            <div class="col-md-4">
+              <div class="card h-100">
+                <div class="card-body text-center">
+                  <h5 class="card-title">Petrol Stok Takip</h5>
+                  <a
+                    href="https://github.com/MuhammedMustafaDemirhan/PetrolStokTakipApp"
+                    target="_blank"
+                    class="btn btn-secondary"
+                    >GitHub'da Görüntüle</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <footer class="bg-dark text-white text-center py-3 mt-4">
+      <div class="container">
+        <p class="mb-1">
+          &copy; 2025 Muhammed Mustafa Demirhan. Tüm hakları saklıdır.
+        </p>
+        <div class="d-flex justify-content-center gap-3">
+          <a
+            href="https://github.com/MuhammedMustafaDemirhan"
+            target="_blank"
+            class="text-white fs-5"
+          >
+            <i class="fab fa-github"></i>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/muhammedmustafademirhan/"
+            target="_blank"
+            class="text-white fs-5"
+          >
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a
+            href="https://www.instagram.com/mami.dmrhn/"
+            target="_blank"
+            class="text-white fs-5"
+          >
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
+        <p class="mb-2">
+          İletişim:
+          <a
+            href="mailto:muhammedmustafademirhan@gmail.com"
+            class="text-white text-decoration-none"
+            >muhammedmustafademirhan@gmail.com</a
+          >
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
